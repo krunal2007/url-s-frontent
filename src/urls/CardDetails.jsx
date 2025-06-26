@@ -51,7 +51,7 @@ export default function CardDetails({ url }) {
           <div className="w-full md:w-4/6 flex items-center space-x-2">
             {!editModeEnabled && (
               <a
-                href={"http://localhost:8000/" + url.shortUrl}
+                href={"https://url-s-backend-ecru.vercel.app" + url.shortUrl}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-blue-500 hover:underline"
@@ -78,7 +78,7 @@ export default function CardDetails({ url }) {
               <button
                 type="button"
                 onClick={() => {
-                  setClipboard(`http://localhost:8000/${url.shortUrl}`);
+                  setClipboard(`https://url-s-backend-ecru.vercel.app/${url.shortUrl}`);
                   toast("Short url copied to clipboard.", {
                     theme: "colored",
                   });
